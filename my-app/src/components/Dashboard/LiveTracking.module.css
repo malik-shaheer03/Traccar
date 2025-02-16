@@ -1,0 +1,22 @@
+.liveTrackingContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0; /* Remove left margin */
+  margin-top: 82px; /* Header height */
+  padding-left: 20px; /* Sidebar width to push the content */
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+  text-align: left;
+}
+
+.mapContainer {
+  height: 50vh;
+  width: 80vw;
+  margin-left: 0;
+  margin-top: 0;
+}

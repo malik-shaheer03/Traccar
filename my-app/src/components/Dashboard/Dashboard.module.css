@@ -1,0 +1,19 @@
+/* Dashboard.module.css */
+.dashboardContainer {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #121212;
+  margin: 0;
+}
+
+.dashboardContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 20px;
+}
+

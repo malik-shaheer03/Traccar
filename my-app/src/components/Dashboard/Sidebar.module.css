@@ -1,0 +1,127 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: #fff;
+  border-right: 2px solid #121212;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.4);
+}
+
+.logo {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #1f1f1f;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.navItem:hover {
+  background-color: #585858;
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.subMenu {
+  list-style-type: none;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.subItem {
+  background-color: transparent;
+  border: none;
+  color: #bbb;
+  padding: 8px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.subItem:hover {
+  color: #fff;
+}
+
+/* Responsive Design for smaller devices like iPhone SE */
+@media (max-width: 375px) {
+  .dashboardContainer {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+
+  .dashboardContent {
+    padding: 10px;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logoContainer {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    width: 40px;
+    margin-bottom: 5px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .navItem {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .icon {
+    font-size: 16px;
+  }
+
+  .subMenu {
+    padding-left: 10px;
+  }
+
+  .subItem {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
