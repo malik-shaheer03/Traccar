@@ -17,7 +17,7 @@ const Navbar = () => {
           <img src={logo} alt="Traccer Logo" className="logo-image" />
         </Link>
         <Link to="/" className="app-name-link">
-          <span className="app-name">Traccer</span>
+          <span className="app-name">Traccar</span>
         </Link>
       </div>
 

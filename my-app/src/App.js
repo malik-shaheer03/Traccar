@@ -20,7 +20,7 @@ const AppContent = () => {
             {!hideNavbar && <Navbar />}
             <div className="main-content">
                 <Routes>
-                    <Route path="/" element={
+                    <Route path="" element={
                         <>
                             <HeroSection />
                             <MissionVisionValues />
@@ -28,9 +28,9 @@ const AppContent = () => {
                             <Footer />
                         </>
                     } />
-                    <Route path="/login" element={<Login />} />
-                    <Route path="/register" element={<Register />} />
-                    <Route path="/dashboard" element={<Dashboard />} /> {/* Add route for Dashboard */}
+                    <Route path="login" element={<Login />} />
+                    <Route path="register" element={<Register />} />
+                    <Route path="dashboard" element={<Dashboard />} />
                 </Routes>
             </div>
         </div>
@@ -39,7 +39,7 @@ const AppContent = () => {
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/Traccar"> {/* Corrected basename */}
             <AppContent />
         </BrowserRouter>
     );
