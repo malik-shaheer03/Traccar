@@ -193,17 +193,18 @@ const firebaseConfig = {
 - **Real-time Updates**: < 500ms latency
 - **Cross-browser Support**: 99%+ compatibility
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 👨‍💻 Author
 **Muhammad Shaheer Malik**  
 - 🌐 [Portfolio](https://shaheer-portfolio-omega.vercel.app)  
 - 💼 [LinkedIn](https://linkedin.com/in/malik-shaheer03)  
 - 🐙 [GitHub](https://github.com/malik-shaheer03)  
 - 📸 [Instagram](https://instagram.com/your_instagram_handle)  
-- 📧 [Email Me](mailto:youremail@example.com)  
+- 📧 [Email Me](mailto:youremail@example.com)
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ---
 
 <div align="center">
