@@ -198,8 +198,8 @@ const firebaseConfig = {
 - 🌐 [Portfolio](https://shaheer-portfolio-omega.vercel.app)  
 - 💼 [LinkedIn](https://linkedin.com/in/malik-shaheer03)  
 - 🐙 [GitHub](https://github.com/malik-shaheer03)  
-- 📸 [Instagram](https://instagram.com/your_instagram_handle)  
-- 📧 [Email Me](mailto:youremail@example.com)
+- 📸 [Instagram](https://instagram.com/malik_shaheer03)  
+- 📧 [Email Me](mailto:shaheermalik03@gmail.com)  
 
 ## 📝 License
 
