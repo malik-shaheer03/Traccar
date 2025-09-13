@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Traccar/static/css/main.4c847e34.css",
+    "main.js": "/Traccar/static/js/main.1deea568.js",
+    "static/js/453.96453769.chunk.js": "/Traccar/static/js/453.96453769.chunk.js",
+    "static/media/hero-background.jpg": "/Traccar/static/media/hero-background.703d7820063aea78aaea.jpg",
+    "static/media/mission-icon.png": "/Traccar/static/media/mission-icon.514f712bab6388eb7057.png",
+    "static/media/logo.png": "/Traccar/static/media/logo.56b873effdc0b37a1a6f.png",
+    "static/media/traccar-logo.jpg": "/Traccar/static/media/traccar-logo.56b873effdc0b37a1a6f.jpg",
+    "static/media/values-icon.png": "/Traccar/static/media/values-icon.2caf187a052151e8dbe2.png",
+    "index.html": "/Traccar/index.html",
+    "main.4c847e34.css.map": "/Traccar/static/css/main.4c847e34.css.map",
+    "main.1deea568.js.map": "/Traccar/static/js/main.1deea568.js.map",
+    "453.96453769.chunk.js.map": "/Traccar/static/js/453.96453769.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4c847e34.css",
+    "static/js/main.1deea568.js"
+  ]
+}
