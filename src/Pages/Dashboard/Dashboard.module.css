@@ -1,0 +1,188 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Dashboard.module.css */
+.dashboardContainer {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #121212 100%);
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+.dashboardContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(57, 255, 245, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(0, 239, 209, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.dashboardContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 250px);
+  height: 100%;
+  margin-left: 250px;
+  padding: 0;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.dashboardGrid {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  grid-template-rows: 1fr;
+  gap: 24px;
+  padding: 24px;
+  height: calc(100vh - 120px);
+  margin-top: 120px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.mainContent {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  padding: 28px;
+  overflow: hidden;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mainContent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.5), transparent);
+}
+
+.sidebarContent {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  padding: 28px;
+  overflow-y: auto;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.sidebarContent::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.5), transparent);
+}
+
+/* Custom scrollbar */
+.sidebarContent::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebarContent::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+}
+
+.sidebarContent::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+.sidebarContent::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 255, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .dashboardContent {
+    width: calc(100% - 220px);
+    margin-left: 220px;
+  }
+  
+  .dashboardGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    gap: 20px;
+    height: calc(100vh - 100px);
+    margin-top: 100px;
+  }
+  
+  .sidebarContent {
+    height: 350px;
+    max-height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboardContent {
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .dashboardGrid {
+    padding: 16px;
+    gap: 16px;
+    height: calc(100vh - 80px);
+    margin-top: 80px;
+  }
+  
+  .mainContent,
+  .sidebarContent {
+    padding: 16px;
+    border-radius: 12px;
+  }
+  
+  .sidebarContent {
+    height: 300px;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboardGrid {
+    padding: 12px;
+    gap: 12px;
+    height: calc(100vh - 70px);
+    margin-top: 70px;
+  }
+  
+  .mainContent,
+  .sidebarContent {
+    padding: 12px;
+    border-radius: 8px;
+  }
+  
+  .sidebarContent {
+    height: 250px;
+    max-height: 250px;
+  }
+}
+

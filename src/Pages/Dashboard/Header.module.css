@@ -1,0 +1,191 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.header {
+  position: fixed;
+  top: 20px;
+  left: 274px;
+  width: calc(100% - 274px - 24px);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  z-index: 1002;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+/* Search-related CSS removed */
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.actionButton {
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.actionButton:hover {
+  background: rgba(0, 255, 255, 0.2);
+  border-color: rgba(0, 255, 255, 0.5);
+  transform: translateY(-1px);
+}
+
+.buttonText {
+  white-space: nowrap;
+}
+
+.notificationButton {
+  position: relative;
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.notificationButton:hover {
+  background: rgba(0, 255, 255, 0.2);
+  border-color: rgba(0, 255, 255, 0.5);
+}
+
+.notificationBadge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: #ff4444;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 10px;
+  min-width: 16px;
+  text-align: center;
+}
+
+.logoutButton {
+  background: rgba(255, 68, 68, 0.1);
+  border: 1px solid rgba(255, 68, 68, 0.3);
+  border-radius: 8px;
+  padding: 8px;
+  color: #ff4444;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.logoutButton:hover {
+  background: rgba(255, 68, 68, 0.2);
+  border-color: rgba(255, 68, 68, 0.5);
+  transform: scale(1.05);
+}
+
+.icon {
+  font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .header {
+    left: 20px;
+    width: calc(100% - 40px);
+  }
+  
+  .buttonText {
+    display: none;
+  }
+  
+  .actionButton {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    left: 0;
+    width: 100%;
+    top: 0;
+    border-radius: 0;
+    padding: 0 16px;
+    height: 70px;
+  }
+  
+  .leftSection {
+    gap: 12px;
+  }
+  
+  .rightSection {
+    gap: 8px;
+  }
+  
+  .actionButton {
+    padding: 6px;
+  }
+  
+  .icon {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0 12px;
+    height: 60px;
+  }
+  
+  .rightSection {
+    gap: 6px;
+  }
+  
+  .actionButton,
+  .menuButton,
+  .notificationButton,
+  .logoutButton {
+    padding: 4px;
+  }
+  
+  .icon {
+    font-size: 14px;
+  }
+}

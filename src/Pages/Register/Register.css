@@ -1,0 +1,209 @@
+/* Importing Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* General Styles */
+body.register-page {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at center, #004d4d, #001f1f, #000c0c);
+}
+
+/* Container */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+    margin-top: 80px; /* Adjust as needed */
+    box-sizing: border-box;
+}
+
+/* Register Box */
+.register-box {
+    display: flex;
+    max-width: 800px; /* Reduced max-width */
+    width: 90%; /* Ensure it scales down on smaller screens */
+    padding: 40px; /* Slightly reduced padding */
+    border-radius: 20px;
+    background: rgba(0, 31, 41, 0.8);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 255, 255, 0.4);
+    box-sizing: border-box;
+    padding: 30px; /* Reduced padding */
+    gap: 15px; /* Reduced gap between sections */
+}
+/* Logo Section */
+.register-logo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;  /* Keep the vertical arrangement */
+    justify-content: center; /* Vertically center content */
+    align-items: center;    /* Horizontally center content */
+    color: #FFFFFF;
+    font-size: 2rem;
+    border-right: 1px solid rgba(0, 255, 255, 0.4);
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 0; /* Important: remove any line-height spacing */
+}
+
+.register-logo img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+}
+
+.register-logo h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+/* Form Section */
+.register-form {
+    flex: 1;
+    padding: 30px;
+    color: #FFFFFF;
+}
+
+.register-form h2 {
+    font-weight: 600;
+    margin: 0px; /* Added margin below h2 */
+}
+
+.register-form span {
+    color: #00FFFF;
+}
+
+.register-form p {
+    font-size: 1rem;
+    color: #AAAAAA;
+    margin-bottom: 20px;
+}
+
+/* Inputs */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    text-align: left; /* Align labels to the left */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(0, 255, 255, 0.5);
+    background: transparent;
+    color: #FFFFFF;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s ease;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+/* Password Field */
+.password-field {
+    position: relative;
+}
+
+.show-btn {
+    position: absolute;
+    right: 10px;
+    top: 38%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #00FFFF;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* Buttons */
+.register-btn {
+    width: 100%;
+    padding: 14px;
+    background: #00FFFF;
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.register-btn:hover {
+    background: #00BFBF;
+}
+
+/* Login Link */
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #B0BEC5;
+}
+
+.login-link a {
+    color: #00FFFF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .register-box {
+        flex-direction: column;
+        padding: 30px;
+    }
+    .register-logo {
+        border-right: none;
+        border-bottom: 2px solid rgba(0, 255, 255, 0.3);
+    }
+    .register-logo img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .register-container {
+        padding: 20px;
+    }
+    .register-box {
+        padding: 20px;
+    }
+    .register-logo img {
+        width: 120px;
+    }
+    .register-logo h1 {
+        font-size: 1.5rem; /* Matches Login.css for mobile */
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .register-logo img {
+        width: 100px;
+    }
+    .register-logo h1 {
+        font-size: 1.2rem;
+    }
+    .register-form h2 {
+        font-size: 1.2rem;
+    }
+    input {
+        padding: 10px;
+    }
+}

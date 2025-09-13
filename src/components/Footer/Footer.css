@@ -1,0 +1,214 @@
+/* Importing Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #fff;
+}
+
+.footer {
+  background-color: #121212;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background-color: #111;
+  border-top: 1px solid #333;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 180px;
+  margin: 20px;
+}
+
+/* Logo Section */
+.footer-section.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 250px;
+}
+
+/* Logo and Text Side-by-Side */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.logo-icon {
+  width: 50px;
+  height: auto;
+}
+
+.footer-section.logo h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+  color: white;
+}
+
+.footer-section.logo p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Section Headings */
+.footer-section h3 {
+  color: #00e6e6;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Text and Link Styles */
+.footer-section p,
+.footer-section a {
+  color: white;
+  text-decoration: none;  /* Removes underline */
+  margin: 6px 0;
+  transition: color 0.3s ease;
+  font-size: 14px;
+}
+
+/* Hover Effect */
+.footer-section a:hover {
+  color: #00e6e6;
+}
+
+/* Footer Bottom Bar */
+.footer-bottom {
+  background-color: #0d0d0d;
+  padding: 15px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #333;
+}
+
+.footer-bottom p {
+  color: #aaa;
+  font-size: 14px;
+  margin: 5px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Icon Button Styles */
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-button:hover {
+  transform: scale(1.2);
+  color: #00e6e6;
+}
+
+.icon-button:focus {
+  outline: none;
+}
+
+/* Quick Links Button Style */
+.link-button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  padding: 0;
+  transition: color 0.3s ease;
+  font-weight: 500;
+  text-decoration: none;  /* Removes underline */
+}
+
+.link-button:hover {
+  color: #00e6e6;
+}
+
+.link-button:focus {
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin: 15px 0;
+  }
+
+  .footer-section.logo {
+    align-items: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Extra Small Devices (phones, less than 480px) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .footer-container {
+    padding: 20px 10px;
+  }
+
+  .footer-section h3 {
+    font-size: 16px;
+  }
+
+  .footer-section p,
+  .footer-section a,
+  .link-button,
+  .footer-bottom p {
+    font-size: 12px;
+  }
+
+  .logo-icon {
+    width: 40px;
+  }
+
+  .footer-section.logo h2 {
+    font-size: 20px;
+  }
+
+  .social-icons {
+    gap: 8px;
+  }
+
+  .icon-button {
+    font-size: 18px;
+  }
+}
